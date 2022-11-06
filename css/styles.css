@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2? family= Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700 & display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  }
+body {
+  padding: 0;
+  margin: 0;
+  font-family:'Lora';
+  background: #FFFFFF;
+  color: #000000;
+  font-size: 16px;
+}
+
+ul, li {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+width: 1154px;
+height: 847px;
+margin: 0 auto; /*позиционирование по центру*/
+}
+
+.box{
+height: 0 auto;
+width: 1170px;
+}
+
+.header {
+background: url('../images/галерея\ бренда\ фото.png') no-repeat center top / cover; /*выюрать картинку вместо img1*/
+}
+
+.neader a {
+  color: #000000;
+}
+
+.logo {
+  margin-right: 200x;
+
+}
+
+
+.menu {
+  display: flex;
+}
+
+.menu li a{
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 18px;
+  margin-right: 40px;
+  font-family:'Lora';
+  color: #000000;
+  
+}
+
+.nav {
+  display: flex;
+  align-items: right;
+  padding-top: 50px;
+}
+
+.diviwant {
+padding-top: 100px;
+text-decoration: none;
+font-size: 72px;
+ margin-right: 40px;
+ font-family:'Lora';
+ color: #000000;
+}
+
+.image__diviwant {
+ background-image: url(../images/фон\ большой\ фото.png); /*вставить фото*/
+  height: 735px;
+  width: 1500px;
+  border-radius: 0px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-origin: content-box;
+  color: #FFFFFF;
+    
+}
+
+.image__diviwant__block1 {
+display: flex;
+font-family: 'Lora';
+font-size: 40px;
+font-weight: 400px;
+line-height: 94px;
+text-align: left;
+
+}
+
+.image__diviwant__block2{
+padding-top: 100px;
+font-family: 'Lora';
+font-size: 24px;
+font-weight: 400;
+line-height: 34px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+.image__diviwant__block3 {
+font-family: 'Lora';
+font-size: 20px;
+font-weight: 400;
+line-height: 25px;
+text-align: left;
+}
+.btn {
+  background: #6A5047;
+  padding: 13px 44px;
+  display: inline-block;
+  font-family: 'Lora';
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 60px;
+}
+
+.btn:hover{
+ color: rgb(0, 0, 0);
+  
+}
+
+.image__diviwant__block4 {
+padding-top: 100px;
+font-family: 'Lora';
+font-size: 16px;
+height: 10px;
+left: 0px;
+border-radius: 0px;
+  
+}
+
+
+.text {
+  color: rgb(106, 80, 71);
+  font-size: 40px;
+}
+
+span  {
+  color: rgb(106, 80, 71);
+  font-size: 60px;
+}
+
+.color.grey.collection {
+  background-color:#C5C5C5;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+
+.ruble.price {
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+}
+
+.Benefits {
+  background-color:#6A5047;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+
+.Benefits.vid {
+   font-size: 40px;
+   font-weight: bold;
+}
