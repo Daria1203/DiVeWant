@@ -1356,23 +1356,22 @@ margin: 0 0 30px 10px;
 
 /*Блок feedback reviews*/
 
-#feedback {
+/*#feedback {
   display: none;
-}
+}*/
 
 .feedback__block {
-  width: 1450px;
-  padding: 0 15px;
+  width: 1488px;
+  padding: 0 0px;
   height: 400px;
   display: flex;
-
 
 }
 
 .feedback__block-1 {
   display: flex;
   height: 400px;
-  width: 720px;
+  width: 761px;
 }
 
 .feedback__block-reviews {
@@ -1429,8 +1428,8 @@ width: 758px;
 
 .feedback__block-2 {
   display: flex;
-  height: 400px;
-  width: 720px;
+  height: 401px;
+  width: 774px;
   color: #FFFFFF;
   
 }
@@ -1439,7 +1438,7 @@ width: 758px;
   background-image: url(../images/cотрудгне.png);
   background-repeat: round;
   height: 400px;
-  width: 723px;
+  width: 723.5px;
   margin-left: 0;
   background-position: 100%;
   display: flex;
@@ -1746,9 +1745,19 @@ background-position: 100%;
   }
 }
 
+
 @media (min-width:767px) {
   .popups__inner {
     position: absolute;
-    top: 790%;
+    top: 870%;
   }
 }
+
+@media (min-width:1199px) {
+  .popups__inner {
+    position: absolute;
+    top:845%;
+  }
+}
+
+

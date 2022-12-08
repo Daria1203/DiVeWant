@@ -11,7 +11,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./css/styles.css">
 <link rel="stylesheet" href="./css/adaptiv.css">
-<script src = "./js/diviwamt.js"></script>
+<script src = "./divewant.js/dv.js"></script>
+<script src = "./diviwant.php/feedback.php"></script>
+<script src = "./diviwant.php/txt.php"></script>
 </head>
 
   <body>
@@ -375,8 +377,7 @@
     </section>
 
 
-<!---Блок feedback-->
-
+<!---Блок feedback СКРЫТЫЙ БЛОК
           <section id="feedback">
             <div class="feedback__block">
               
@@ -384,10 +385,11 @@
                 <div class="feedback__block-reviews">
                     <h1 class="feedback__block-reviews-1"> Reviews </h1>
                     <h4 class="feedback__block-reviews-2"> Your feedback helps us improve </h4>
-                
-                  <input class="View"
-                  type="button" name="View all" id="View all"
-                  value="View all"> 
+                  <input class="View" 
+                  type="submit" 
+                  name="leave your feedback" 
+                  id="leave your feedback" 
+                  value="leave your feedback"> 
                 </div>
               </div>
               <div class="feedback__block-2">
@@ -395,13 +397,14 @@
                     <h1 class="feedback__block-suggestions-1"> Suggestions </h1>
                     <h4 class="feedback__block-suggestions-2"> Proposals for cooperation and <br/> accommodation </h4>
                     <input class="Write"
-                    type="button" name="Write" id="Write"
+                    type="submit" 
+                    name="Write" id="Write"
                     value="Write to us">
                   </div>
                 </div>
-
               </div>
           </section>
+--->
 
           <footer>
             <section id = "Footer">
@@ -490,9 +493,7 @@
 
       $('#name').click(function () {
       alert("Укажите имя на русском языке")
-      });
-
-      
+      });  
     </script>
   </main>
 </body>
