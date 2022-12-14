@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2? family= Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700 & display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: normal;
+
+  }
+
+body {
+  font-family:'Lora';
+  background: #FFFFFF;
+  color: #000000;
+  font-size: 16px;
+  max-width: 1440px;
+  height: 3000px;
+  margin: 0 auto;
+
+}
+#StoryNews {
+    background-color: #C5C5C5;
+    width: 1325px;
+}
+
+.Story {
+    display: block;
+}
+
+.Story h1 {
+    font-size: 40px;
+    color: #6A5047;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+.text_block {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img {
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.img_story {
+    width: 95%;
+    border: #000000;
+}
+
+.Text_story {
+    display: block;
+    margin-left: 55px;
+}
+.Text_story p {
+    margin: 10px;
+    color: #6A5047;
+    font-size: 24px;
+}
+/*блок новости галерея бренда*/
+
+#GaleryNews {
+    width: 1325px;
+    margin-top: 19px;
+    background-color: #6A5047;
+    color: #FFFFFF;
+    display: block;
+    text-align: center;
+}
+
+.galery_text h1 {
+    font-size: 40px;
+    padding: 20px;
+}
+.galery_text h3 {
+    font-size: 20px;
+}
+
+.img_galery {
+    display: flex;
+    flex-direction: row;
+    width: 1290px;
+    padding-bottom: 40px;
+    justify-content: space-between;
+}
+.img_news-galery {
+    width: 236px;
+    padding-left: 70px;
+    padding-right: 70px;
+    margin-top: 40px;
+}
+
+#fashionNews {
+    width: 1325px;
+    margin-top: 19px;
+    background-color: #C5C5C5;
+    color: #6A5047;
+    display: block;
+    text-align: center;
+}
+
+.fashion_text h1 {
+    font-size: 40px;
+    padding: 20px;
+}
+
+.fashion_text h3 {
+    font-size: 20px;
+}
+
+.nomination__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img_nomination {
+    display: flex;
+    padding-block-end: 42px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.img_news {
+    width: 236px;
+    padding-left: 70px;
+    padding-right: 70px;
+    margin-top: 40px;
+}
+
+.nomination_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-end;
+    padding-right: 186px;
+}
+
+.nomination_text p {
+    font-size: 20px;
+    padding: 5px;
+}
+
+.img_priz {
+    display: block;
+}
+
+.img_priz-k {
+    width: 50px;
+}

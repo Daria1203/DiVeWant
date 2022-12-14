@@ -11,9 +11,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./css/styles.css">
 <link rel="stylesheet" href="./css/adaptiv.css">
-<script src = "./divewant.js/dv.js"></script>
-<script src = "./diviwant.php/feedback.php"></script>
-<script src = "./diviwant.php/txt.php"></script>
+
+<link rel="stylesheet" href="/diviwant/diviwant.php/feedback.php">
+<link rel="stylesheet" href="/diviwant/diviwant.php/txt.php">
 </head>
 
   <body>
@@ -37,13 +37,61 @@
               <a href="#Footer"> Contact </a>
             </li>
             <li>
-              <a href="#Collection"> <img src="https://img.icons8.com/material/344/favorite-cart.png" alt="корзина" widht="17px" height="17px"/> </a>
-            </li>
-            <li>
               <a href="#feedback"> feedback </a>
             </li>
-          </ul>
+          
+            <!-- НАВИГАЦИЯ НА КОРЗИНУ -->
+            <div class="header__cart cart active" tabindex="0">
+              <div class="cart__text">
+              <a href="#Collection"> <img src="https://img.icons8.com/material/344/favorite-cart.png" alt="корзина" widht="17px" height="17px"/> </a>
+              <span class="cart__quantity">0</span>
+            </div>
+            <div class="cart-content">
+              <ul class="cart-content__list" data-simplebar>
+                <li class="cart-content__item">
+                  <article class="cart-content__product cart-product">
+                    <img src="./images/cart1.png" alt="белая баска-карточка" widht="100px" height="100px" class="cart__product__img">
+                    <div class="cart-product__text">
+                      <h3 class="cart-product__title">Баска белая из атласа</h3>
+                      <span class="cart-product__prise"> 7500</span>
+                    </div>
+                    <button class="cart-product__delete" aria-label="Удалить товар"></button>
+                  </article>
+                </li>
+                <li class="cart-content__item">
+                  <article class="cart-content__product cart-product">
+                    <img src="./images/cart1.png" alt="белая баска-карточка" widht="100px" height="100px" class="cart__product__img">
+                    <div class="cart-product__text">
+                      <h3 class="cart-product__title">Баска белая из атласа</h3>
+                      <span class="cart-product__prise"> 7500</span>
+                    </div>
+                    <button class="cart-product__delete" aria-label="Удалить товар"></button>
+                  </article>
+                </li>
+                <li class="cart-content__item">
+                  <article class="cart-content__product cart-product">
+                    <img src="./images/cart1.png" alt="белая баска-карточка" widht="100px" height="100px" class="cart__product__img">
+                    <div class="cart-product__text">
+                      <h3 class="cart-product__title">Баска белая из атласа</h3>
+                      <span class="cart-product__prise"> 7500</span>
+                    </div>
+                    <button class="cart-product__delete" aria-label="Удалить товар"></button>
+                  </article>
+                </li>
+              </ul>
+              <div class="cart-content__bottom">
+                <div class="cart-content__fullprice">
+                  <span>Итого:</span>
+                  <span class="fullprice">4656</span>
+                </div>
+                <button class="cart-content__btn btn">Перейти в корзину</button>
+              </div>
+            </div>
+            </div>
+             <!-- НАВИГАЦИЯ НА КОРЗИНУ -->
+            </ul>
         </nav>
+        
       <main>
           <div class ="diviwant__form-container">
 
@@ -68,7 +116,7 @@
 
                 <div class="diviwant__image-block5">
                   <p slass="Nomination">Nomination: best design project 2022</p> <br>
-                  <p class="Websait"> <a href="#history__brand">WebDevelopment 2022 • DiVeWant.com</a></p>
+                  <p class="Websait"> <a href="#history2">WebDevelopment 2022 • DiVeWant.com</a></p>
                 </div>
                 </div> 
           </div>
@@ -282,13 +330,40 @@
                 <!--кнопка Come up Size guide-->
             
                 <div class="buy__size">
-                    <h5 class="btn__buy-size"> Come up Size guide </h5>
-                </div>
-
+                    <button class="btn__buy-size" onclick="show_popap('modal-1')"> Come up Size guide </button>
+                    <!---НАСТРОЙКА ДЛЯ ВЫЗОВА КНОПКИ ПРИ  КЛИКЕ-->
+                    <div class="overlay" id="modal-1">
+                      <div class="flex-popap">
+                        <div class="popap">
+                          <span class="close_popap">Закрыть</span>
+                          <div class="body__waist">
+                          <h1 class="si">SIZE</h1>
+                          <h1 class="si">BODY WAIST</h1>
+                          <p>XS : 55-65 CM</p>
+                          <p>S : 65-70 CM</p>
+                          <p>M : 70-75 CM</p>
+                          <p>L : 75-80 CM</p>
+                          <p>XL : 80-90 CM</p>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+                  <script>               
+                  // функция вызова окна
+                  function show_popap(id_popap) {
+                  let id = "#" + id_popap;
+                  $(id).addClass('active');
+                  }
+                  // функция закрытия окна 
+                  $(".close_popap").click( function(){
+                  $(".overlay").removeClass("active");
+                  });
+                  </script>
                 <div class="img__come-up">
-                    <img class="img__come-up-1" src="../diviwant/images/Vector.png" alt="`" widht="72px" height="10px"/>
+                    <img class="img__come-up-1" src="../diviwant/images/Group.png" alt="`" widht="72px" height="10px"/>
                 </div>
-
         </div>      
       </section>
 
@@ -306,17 +381,13 @@
               </div>
 
       <!---Кнопка перейти ко всем историям--->
-
-          <div class="buy__history">
+          <!-- <div class="buy__history">
             <p class="btn__buy-history"> Explore all posts height <img src="images/стрелочка.png" alt="стрелочка" widht="17px"> </p> 
-          </div>
-
-      <!---Блок фотографий историй бренда--->
+          </div> -->
       
-          <div class="history__block-photo">
-
+          
           <!---Блок история бренда--->
-
+          <div class="history__block-photo">
                 <div class="history__text-photo-1">
 
                   <div class="history__block-photo-1">
@@ -330,13 +401,13 @@
                   </div>
 
                   <div class="View__post">
-                    <p class="View__post-1"> View post <img class="strelka" src="../diviwant/images/стр.png" alt="стрелочка" widht="17px" height="17px"/> </p>
+                    <a href="./diviwantNews.html" target="_self"> <p class="View__post-1"> View post <img class="strelka" src="../diviwant/images/стр.png" alt="стрелочка" widht="17px" height="17px"/> </p> </a>
                   </div>
                 </div> 
                 
               <!---Блок галерея образов--->
 
-              <div class="history__text-photo-2">
+              <div id="history2" class="history__text-photo-2">
 
                 <div class="history__block-photo-2">
                   <img ckass="history__galery-photo" src="../diviwant/images/новая кастом.png" alt = "галерея басок" widht="376px" height="250px"/>
@@ -349,7 +420,7 @@
                 </div>
                 
                 <div class="View__post">
-                    <p class="View__post-2"> View post <img class="strelka" src="../diviwant/images/ctr.png" alt="стрелочка" widht="17px" height="17px"/></p> 
+                  <a href="./diviwantNews.html" target="_self"> <p class="View__post-1"> View post <img class="strelka" src="../diviwant/images/стр.png" alt="стрелочка" widht="17px" height="17px"/> </p> </a>
                 </div>
               </div>
                 
@@ -368,7 +439,7 @@
                 </div>
 
                 <div class="View__post">
-                  <p class="View__post-3"> View post <img class="strelka" src="..//diviwant/images/ctr.png" alt="стрелочка" widht="17px" height="17px"/> </p>
+                  <a href="./diviwantNews.html" target="_self"> <p class="View__post-1"> View post <img class="strelka" src="../diviwant/images/стр.png" alt="стрелочка" widht="17px" height="17px"/> </p> </a>
                 </div>
               </div>
 
@@ -377,34 +448,20 @@
     </section>
 
 
-<!---Блок feedback СКРЫТЫЙ БЛОК
-          <section id="feedback">
-            <div class="feedback__block">
-              
+
+  <section id="feedback">
               <div class="feedback__block-1">
-                <div class="feedback__block-reviews">
-                    <h1 class="feedback__block-reviews-1"> Reviews </h1>
-                    <h4 class="feedback__block-reviews-2"> Your feedback helps us improve </h4>
-                  <input class="View" 
-                  type="submit" 
-                  name="leave your feedback" 
-                  id="leave your feedback" 
-                  value="leave your feedback"> 
-                </div>
-              </div>
-              <div class="feedback__block-2">
-                  <div class="feedback__block-suggestions">
-                    <h1 class="feedback__block-suggestions-1"> Suggestions </h1>
-                    <h4 class="feedback__block-suggestions-2"> Proposals for cooperation and <br/> accommodation </h4>
-                    <input class="Write"
-                    type="submit" 
-                    name="Write" id="Write"
-                    value="Write to us">
+                  <div class="feedback__block-reviews" style="text-align: center">
+                      <h1 class="feedback__block-reviews-1"> Reviews </h1>
+                  <form action="txt.php" method="POST">
+                      <label class="feedback__block-reviews-2" for="text"> Your feedback helps us improve </label><br>
+                      <textarea name="reviews" id="reviews" cols="55" rows="5"></textarea><br>
+                      <input class="View" type="submit" name="leave your feedback" id="leave your feedback" value="leave your feedback">
+                  </form>
                   </div>
-                </div>
               </div>
-          </section>
---->
+  </section>
+
 
           <footer>
             <section id = "Footer">
@@ -496,5 +553,7 @@
       });  
     </script>
   </main>
+  <script src="../diviwant/divewant.js/simplebar.js"></script>
+  <script src="../diviwant/divewant.js/cart.js"></script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 
-<link rel="stylesheet" type="text/css" href="../css/styles.css"></link>
-<link rel="stylesheet" type="text/css" href="../diviwant.html"></link>
+<link rel="stylesheet" href="../css/styles.css"></link>
+<link rel="stylesheet" href="/diviwant/diviwant.html"></link>
 <meta charset="utf-8">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +12,6 @@
 <title>Обратная связь</title>
 </head>
 <body>
-<div class="feedback__block">
         <div class="feedback__block-1">
             <div class="feedback__block-reviews" style="text-align: center">
                 <h1 class="feedback__block-reviews-1"> Reviews </h1>
@@ -23,16 +22,5 @@
             </form>
             </div>
         </div>
-        <div class="feedback__block-2">
-            <div class="feedback__block-suggestions" style="text-align: center">
-                <h1 class="feedback__block-suggestions-1"> Suggestions </h1>
-            <form action="write.php" method="POST">
-                <label class="feedback__block-suggestions-2" for="text"> Proposals for cooperation and <br/> accommodation </label><br>
-                <textarea name="suggestions" id="suggestions" cols="55" rows="5"></textarea><br>
-                <input class="Write" type="submit" name="Write" id="Write" value="Write to us">
-            </form>
-            </div>
-        </div>
-    </div>
 </body>
 </html> 
